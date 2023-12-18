@@ -3,7 +3,7 @@
 This is a docker image to make it easy to connect to and use the Hessian-AI-Cluster.
 
 ```bash
-docker run -it --rm --cap-add NET_ADMIN -e VPN_USER=<TU-ID> -e VPN_PASSWORD='<TU-Password>' -e DET_USER=<TU-ID> -e DET_PASSWORD='<DETERMINED-AI-PASSWORD>' -e SSH_PUB_KEY=\"$(cat ~/.ssh/id_*.pub | head -n 1)\" -p 9541:9541 -v .:/wd simonramstedt/hessian-cluster      
+docker run -it --rm --cap-add NET_ADMIN -e VPN_USER=<TU-ID> -e VPN_PASSWORD='<TU-Password>' -e DET_USER=<TU-ID> -e DET_PASSWORD='<DETERMINED-AI-PASSWORD>' -e SSH_PUB_KEY="$(cat ~/.ssh/id_*.pub | head -n 1)" -p 9541:9541 -v .:/wd simonramstedt/hessian-cluster      
 ```
 
 Then the DeterminedAI webinterface should be at http://localhost:9541.
