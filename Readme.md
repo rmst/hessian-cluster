@@ -77,11 +77,11 @@ hessian cat /root/.bashrc
 To build the docker image on your own machine just run
 
 ```bash
-docker build -t hessian-cluster/latest .
+docker build -t hessian-cluster:latest .
 ```
 
 To push the image to your own docker registry run
 ```bash
-docker build -t $DOCKERHUB_USER/hessian-cluster/latest .
-docker push $DOCKERHUB_USER/hessian-cluster/latest
+docker build -t $DOCKERHUB_USER/hessian-cluster:latest .
+docker push $DOCKERHUB_USER/hessian-cluster:latest
 ```
